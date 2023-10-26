@@ -1,7 +1,7 @@
 //01. 문자열 뒤집기
 //문자열도 인덱스를 통해 꺼낼 수 있음
 function solution(my_string){
-  const newString=''
+  var newString=''
   for(let i = my_string.length -1 ; i >= 0; i--){
     newString += my_string[i]
   }
@@ -49,12 +49,12 @@ function solution(num_list){
 
 //04. 문자 반복 출력하기
 function solution(my_string, n){
-  var answer = ""
+  var answer = ''
   for(let i = 0; i < my_string.length; i++){
     const repeatCharacter = my_string[i]
     for(let j = 0; j < n; j++){
       answer += repeatCharacter
-    }
-    return answer
+    } 
   }
+  return answer 
 }
