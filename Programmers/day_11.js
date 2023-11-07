@@ -3,7 +3,7 @@ function solution(box, n) {
   const garo = Math.floor(box[0] / n)
   const sero = Math.floor(box[1] / n)
   const height = Math.floor(box[2] / n)
-  return garo * sero * height;
+  return garo * sero * height
 }
 
 function solution(box, n) {
@@ -28,7 +28,7 @@ const getIsCount = (i) => {
   return isCount
 }
 function solution(n) {
-  let answer = 0;
+  let answer = 0
   for(let i = n; i>=1; i--){
     //i가 합성수인지 비교하는 숫자
     const isCount = getIsCount(i)
@@ -37,7 +37,7 @@ function solution(n) {
       answer += 1
     } 
   }
-  return answer;
+  return answer
 }
 
 //03. 최대값 만들기(1)

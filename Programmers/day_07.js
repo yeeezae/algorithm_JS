@@ -47,5 +47,5 @@ function solution(n) {
       sum += i
     } 
   } 
-  return sum;
+  return sum
 }

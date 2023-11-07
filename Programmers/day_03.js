@@ -68,11 +68,11 @@ function solution(array){
 
 //04. 홀수 구하기
 function solution(n) {
-  var answer = [];
+  var answer = []
   for(let i = 0 ; i <= n; i++){
     if (i % 2 === 1){
       answer.push(i)
     }
   }
-  return answer.sort((a,b) => a-b);
+  return answer.sort((a,b) => a-b)
 }

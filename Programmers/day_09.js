@@ -37,7 +37,7 @@ function solution(letter) {
     }
   }
   answer += morse[currentMorse]
-  return answer;
+  return answer
 }
 
 //자바스크립트 기능
@@ -54,7 +54,7 @@ function solution(letter) {
   for(let i = 0; i < splitedLetter.length; i++){
     answer += morse[splitedLetter[i]]
   }
-  return answer;
+  return answer
 }
 
 //03. 가위바위보
@@ -65,12 +65,12 @@ const win ={
   "5" : "2",
 }
 function solution(rsp) {
-  var answer = '';
+  var answer = ''
   for (let i = 0; i< rsp.length; i++){
     const item = rsp[i]
     answer += win[item]
   }
-  return answer;
+  return answer
 }
 
 //04. 구술을 나누는 경우의 수
@@ -80,7 +80,7 @@ function solution(rsp) {
 //오버플로 이슈로 
 // r! / nPr+1 로 풀이
 function solution(balls, share) {
-  var answer = 0;
+  var answer = 0
   const n = balls
   const r = share
 
@@ -93,5 +93,5 @@ function solution(balls, share) {
     three *= i
   }
   answer = Math.floor(one / three)
-  return answer;
+  return answer
 }

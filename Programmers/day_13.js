@@ -3,7 +3,7 @@
 // 2. Z
 // 3. 공백
 function solution(s) {
-  var answer = 0;
+  var answer = 0
   //100
   let numbers = []
   let collectNumber = ''
@@ -27,7 +27,7 @@ function solution(s) {
   for (let i=0; i<numbers.length; i++){
     sum += numbers[i]
   }
-  return sum;
+  return sum
 }
 
 function solution(s){
@@ -48,13 +48,13 @@ function solution(s){
 
 //02. 배열 원소의 길이
 function solution(strlist) {
-  const answer = [];
+  const answer = []
   for(let i = 0; i <strlist.length; i++){
     const item = strlist[i]
     answer.push(item.length)
 
   }
-  return answer;
+  return answer
 }
 
 //03. 중복된 문자 제거

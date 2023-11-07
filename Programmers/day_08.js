@@ -4,12 +4,12 @@ function solution(numbers, num1, num2) {
   for(let i = num1; i <= num2; i++){
     newNumbers.push(numbers[i])
   }
-  return newNumbers;
+  return newNumbers
 }
 
 //02.외계행성의 나이 문제
 function solution(age) {
-  var answer = '';
+  var answer = ''
   const stringAge = String(age) //문자열로 변환
   for(let i = 0; i < stringAge.length; i++){
     if(stringAge[i] === '0'){
@@ -43,31 +43,31 @@ function solution(age) {
       answer += 'j'
     }
   }
-  return answer;
+  return answer
 }
 
 //배열에 담는 방법
 function solution(age) {
     var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
-    var answer = "";
-    age = age.toString();
+    var answer = ""
+    age = age.toString()
 
     for(let i=0; i<age.length; i++){
-        answer += alphabet[age[i]];
+        answer += alphabet[age[i]]
     }
-    return answer;
+    return answer
 }
 
 //아스키코드 이용
 //자바문법 사용
 //컴퓨터가 문자를 어떻게 저장하는지?
 function solution(age) {
-  var answer = '';
+  var answer = ''
   const stringAge = String(age) //문자열로 변환
   for(let i = 0; i < stringAge.length; i++){
     answer += String.fromCharCode(stringAge[i].charCodeAt(0) + 49)
   }
-  return answer;
+  return answer
 }
 
 //03. 진료 순서 정하기
@@ -83,13 +83,13 @@ function solution(emergency) {
     let item = newEmergency[i]
     answer[item.idx] = i + 1
   }
-  return answer;
+  return answer
 }
 
 //04. 순서쌍의 개수
 //공약수 구하는 문제
 function solution(n) {
-  var answer = 0;
+  var answer = 0
   let i = 1
   while(true){
     if(i > n){
@@ -101,5 +101,5 @@ function solution(n) {
     i += 1
   }
   
-  return answer;
+  return answer
 }

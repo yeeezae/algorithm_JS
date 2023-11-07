@@ -59,7 +59,7 @@ function solution(numbers, direction) {
     }
     answer.push(numbers[0])
   }
-  return answer;
+  return answer
 }
 //스택, 큐 문제
 //현업에서는 쓰지 않을 코드
@@ -72,5 +72,5 @@ function solution(numbers, direction) {
     const firstItem = numbers.shift()
     numbers.push(firstItem)
   }
-  return numbers;
+  return numbers
 }

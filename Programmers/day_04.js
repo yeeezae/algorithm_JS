@@ -24,8 +24,8 @@ function solution(n) {
 
 //03. 피자 나눠먹기(3)
 function solution(slice, n) {
-  var answer = Math.ceil(n/slice);
-  return answer;
+  var answer = Math.ceil(n/slice)
+  return answer
 }
 
 //04. 배열 평균값 구하기
