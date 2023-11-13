@@ -7,7 +7,7 @@ function solution(s) {
   //100
   let numbers = []
   let collectNumber = ''
-  for(let i = 0; i <s.length; i++){
+  for(let i = 0; i < s.length; i++){
     const item = s[i]
     if(item === 'Z'){
       numbers.pop()
@@ -24,7 +24,7 @@ function solution(s) {
   }
   // numbers <= 우리가 더해야할 모든 숫자 배열
   let sum = 0
-  for (let i=0; i<numbers.length; i++){
+  for (let i = 0; i < numbers.length; i++){
     sum += numbers[i]
   }
   return sum
@@ -33,7 +33,7 @@ function solution(s) {
 function solution(s){
   let sum = 0
   const splittedArray = s.split(' ')
-  for(let i =0; i < splittedArray.length; i++){
+  for(let i = 0;i < splittedArray.length; i++){
     const item = (splittedArray[i])
     if(item !== 'Z'){
       sum += Number(item)
@@ -49,7 +49,7 @@ function solution(s){
 //02. 배열 원소의 길이
 function solution(strlist) {
   const answer = []
-  for(let i = 0; i <strlist.length; i++){
+  for(let i = 0; i < strlist.length; i++){
     const item = strlist[i]
     answer.push(item.length)
 

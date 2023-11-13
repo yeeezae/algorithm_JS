@@ -1,7 +1,7 @@
 //01. 모음 제거
 function solution(my_string) {
   let answer = '';
-  for(let i = 0; i<my_string.length;i++){
+  for(let i = 0; i < my_string.length; i++){
     if(my_string[i] ==='a'){
       continue
     }
@@ -23,12 +23,12 @@ function solution(my_string) {
 }
 
 function solution(my_string) {
-  let answer = '';
+  let answer = ''
   const vowels = ['a', 'e', 'i', 'o', 'u']
-  for(let i = 0; i<my_string.length;i++){
+  for(let i = 0; i < my_string.length; i++){
     const item = my_string[i] 
     let isVowel = false
-    for(let j = 0 ; j < vowels.length ; j++){
+    for(let j = 0; j < vowels.length; j++){
       if (item === vowels[j]){
         isVowel = true
         break
@@ -44,7 +44,7 @@ function solution(my_string) {
 //02. 문자 정렬하기
 function solution(my_string) {
   var answer = [];
-  for(let i = 0; i<my_string.length;i++){
+  for(let i = 0; i < my_string.length; i++){
     const item = Number(my_string[i])
     if(Number.isNaN(item)){
       continue
@@ -56,8 +56,8 @@ function solution(my_string) {
 
 //03. 숨어있는 숫자의 덧셈
 function solution(my_string) {
-  var answer = 0;
-  for(let i = 0; i<my_string.length;i++){
+  var answer = 0
+  for(let i = 0; i < my_string.length; i++){
     const item = my_string[i]
     if(Number.isNaN(Number(item))){
       continue
@@ -69,8 +69,8 @@ function solution(my_string) {
 
 //04. 소인수분해
 function solution(n) {
-  var answer = [];
-  for(let i =2 ; n !==1 ; i++){
+  var answer = []
+  for(let i = 2; n !==1; i++){
     if(n % i === 0){
       while(n%i === 0){
         n /= i

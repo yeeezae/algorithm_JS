@@ -2,7 +2,7 @@
 //배열에 문자를 넣는데 뺄 문자랑 달라야지 넣어줌
 function solution(my_string, letter) {
   var answer=[]
-  for (let i = 0 ; i < my_string.length ; i ++){
+  for (let i = 0; i < my_string.length; i ++){
     if (my_string[i] !== letter){
       answer += my_string[i]
     }

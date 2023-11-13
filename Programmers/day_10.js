@@ -21,7 +21,7 @@ function solution(dot) {
 function solution(num_list, n) {
   const result = []
   let tempArray =[]
-  for(let i=0;i<num_list.length;i++){
+  for(let i = 0; i < num_list.length; i++){
     const item = num_list[i]
     tempArray.push(item)
     if(tempArray.length === n){
@@ -35,7 +35,7 @@ function solution(num_list, n) {
 //03. 공던지기 문제
 function solution(numbers, k) {
   let cnt = 1
-  for(let i =0 ;; i+=2){
+  for(let i = 0; ; i+=2){
     i %= numbers.length
     const item = numbers[i]
     if(cnt === k){
@@ -47,10 +47,10 @@ function solution(numbers, k) {
 
 //04. 배열 회전시키기
 function solution(numbers, direction) {
-  const answer = [];
+  const answer = []
   if(direction === 'right'){
     answer.push(numbers[numbers.length - 1])
-    for (let i = 0; i < numbers.length -1;i++){
+    for (let i = 0; i < numbers.length -1; i++){
       answer.push(numbers[i])
     }
   }else{

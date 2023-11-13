@@ -23,7 +23,7 @@ function solution(money) {
 
 //03. 나이출력
 function solution(age) {
-  return 2022 - age + 1;
+  return 2022 - age + 1
 }
 
 //04. 배열 뒤집기

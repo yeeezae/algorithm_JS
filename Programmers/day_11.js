@@ -8,7 +8,7 @@ function solution(box, n) {
 
 function solution(box, n) {
   const answer = 1
-  for(let i =0; i<3;i++){
+  for(let i = 0; i < 3; i++){
     answer *= Math.floor(box[i] / n)
 
   }
@@ -29,7 +29,7 @@ const getIsCount = (i) => {
 }
 function solution(n) {
   let answer = 0
-  for(let i = n; i>=1; i--){
+  for(let i = n; i >= 1; i--){
     //i가 합성수인지 비교하는 숫자
     const isCount = getIsCount(i)
     //isCount 값으로 -> 합성수 여부를 확인할 수 있다
@@ -57,7 +57,7 @@ const getFactorial = (i) => {
   return result
 }
 function solution(n) {
-  for(let i =1; ;i++){
+  for(let i = 1; ; i++){
     const result = getFactorial(i)
     if(n < result){
       return i-1

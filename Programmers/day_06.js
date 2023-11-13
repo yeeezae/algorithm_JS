@@ -2,7 +2,7 @@
 //문자열도 인덱스를 통해 꺼낼 수 있음
 function solution(my_string){
   var newString=''
-  for(let i = my_string.length -1 ; i >= 0; i--){
+  for(let i = my_string.length -1; i >= 0; i--){
     newString += my_string[i]
   }
   return newString
@@ -24,7 +24,7 @@ rl.on('line', function(line){
 }).on('close', function(){
   const n = Number(input[0])
 
-  for(let i = 1; i <=n; i++){
+  for(let i = 1; i <= n; i++){
     let starStr = ""
     for(let j = 0; j < i; j++){
       starStr += "*"

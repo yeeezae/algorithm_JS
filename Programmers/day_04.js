@@ -2,8 +2,8 @@
 //01. 피자 나눠먹기(1)
 //
 function solution(n) {
-  var answer = Math.ceil(n/7);
-  return answer;
+  var answer = Math.ceil(n/7)
+  return answer
 }
 
 //02. 피자 나눠먹기(2)
@@ -19,7 +19,7 @@ function solution(n) {
     }
     i += 1
   }
-  return answer;
+  return answer
 }
 
 //03. 피자 나눠먹기(3)
@@ -31,7 +31,7 @@ function solution(slice, n) {
 //04. 배열 평균값 구하기
 function solution(numbers) {
   let sum = 0
-  for(let i = 0 ; i < numbers.length ; i++){
+  for(let i = 0; i < numbers.length; i++){
     sum += numbers[i]
     
   }
