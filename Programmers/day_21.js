@@ -52,3 +52,21 @@ function solution(board) {
   board.map(v1 => v1.map(v2 => v2 == 0 ? answer++ : 0));
   return answer;
 }
+
+//03. 삼각형의 완성조건(2)
+//1. 배열 안에 가장 큰수와 작은수 꺼내기 
+//조건 2가지 생각하기 
+function solution(sides) {
+  const max_num = Math.max(...sides)
+  const min_num = Math.min(...sides)
+  const answer = 0
+  //만약 기존 요소중에서 가장 긴변이 있다면
+  for(let i = max_num - min_num + 1; i <= max_num; i++){
+    answer++
+  }
+  //나머지 한변이 가장 긴변인 경우
+  for(let i = max_num + 1; i < max_num + min_num; i++){
+    answer++
+  }
+  return answer
+}
