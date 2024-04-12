@@ -1,4 +1,5 @@
 //01. 가운데 글자 가져오기
+//s.substr() 길이만큼 문자 가져오기
 function solution(s){
   let a = Math.floor(s.length/2)
   return s.length % 2 ? s.substr(a, 1) : s.substr(a-1, 2)
@@ -24,6 +25,7 @@ function solution(arr, divisor){
 }
 
 //04. 두 정수 사이의 합
+//temp로 a,b 위치 바꾸기
 function solution(a,b){
   let answer = 0
   if (a === b){
